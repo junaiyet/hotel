@@ -1,0 +1,88 @@
+.news-area{
+    .news-item{
+        // border-right: 1px solid $tertiary-color;
+        margin-bottom: 30px;
+        position: relative;
+        &::after{
+            position: absolute;
+            right: 10px;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            background-color: $tertiary-color;
+            content: "";
+        }
+        .news-img{
+            .images{
+                position: relative;
+                &:hover{
+                    .overlay{
+                        opacity: 1;
+                    }
+                }
+                img{
+                    width: 100%;
+                }
+               .overlay {
+                    opacity: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;   
+                    align-items: center;
+                    justify-content: center;
+                    background: linear-gradient(rgba(197, 79, 162, 0), rgba(185, 90, 156, 0.479));
+                    transition: all linear .3s;
+                   a {
+                        display: inline-block;
+                        position: relative;
+                        z-index: 2;
+                       i {
+                            width: 40px;
+                            height: 40px;
+                            background-color: #ffff;
+                            color: #d7d8d9;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+           
+        }
+        .news-details{
+            h4{
+                padding-bottom: 20px;
+            }
+            .post-meta{
+                padding-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                span{
+                    width: 40%;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                .author{
+                    width: 20%;
+                    text-align: left;
+                    a{
+                        img{
+
+                            width: 25%;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

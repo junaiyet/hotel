@@ -1,0 +1,21 @@
+.discover{
+    .discovers-images{
+  margin-bottom: 24px;
+        position: relative;
+    
+        img{
+            width: 100%;
+        }
+ 
+ 
+      .caption {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #ffff;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+    
+    }
+}

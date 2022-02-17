@@ -1,0 +1,209 @@
+
+
+.rooms-slider-area{
+    img{
+        width: 100%;
+        border-radius: 2px;
+    }
+
+    .slider-bottom{
+        transform: translateY(-100px);
+        .item{
+            margin: 0 12px;
+        }
+    }
+
+    .details{
+        p{
+            font-size: 14px;
+            line-height: 24px;
+        padding-bottom: 50px;
+        }
+ 
+         .room-info{
+           ul{
+             padding-bottom: 50px;
+             li{
+               padding-bottom: 10px;
+               i{
+                margin-right: 10px;
+                color: #82B73A;
+               }
+               .close{
+                color: #f1572f;
+               }
+             }
+           }
+         }
+
+        .review-bg{
+          background-color: $primary-color;
+          text-align: center;
+          color: $white;
+          padding: 30px 20px;
+          border-radius: 5px;
+          text-transform: uppercase;
+          span{
+            font-size: 20px;
+            font-weight: 600;
+          }
+          p{
+            padding-bottom: 0;
+          }
+          ul{
+            li{
+              display: inline-block;
+            }
+          }
+        }
+        .rating-point{
+          li{
+            // font-size: 12px;
+            // margin-top: -5px;
+            text-transform: uppercase;
+          }
+        }
+
+        .user-review{
+
+          padding-top: 50px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .left-side{
+            width: 10%;
+            img{
+              width: 100%;
+            }
+          }
+          .right-side{
+            width: 85%;
+            position: relative;
+            padding: 20px 30px;
+            border: 1px solid #efefef;
+            border-left-width: 8px;
+            &::after{
+              position: absolute;
+              top: 15px;
+              left: -18px;
+              height: 0;
+              width: 0;
+              content: '';
+              display: block;
+              border-width: 10px 12px 10px 0;
+              border-style: solid;
+              border-color: transparent #efefef;
+            }
+            .review-contentt{
+              ul{
+                padding-bottom: 10px;
+                li{
+                  i{
+                    color: $dip-yellow;
+                    font-size: 13px;
+
+                  }
+                }
+                .last-child i{
+                  color: $tertiary-color;
+                }
+              }
+              span{
+                display: block;
+                font-style: italic;
+                font-size: 13px;
+                padding-bottom: 15px;
+              }
+            }
+            .room-reviews .review-contentt {
+              position: relative;
+              padding: 20px 30px;
+              border: 1px solid #efefef;
+              border-left-width: 8px;
+          }
+            ul{
+              li{
+                display: inline-block;
+              }
+            }
+          }
+        }
+
+
+    }
+
+    .sidebar{
+      .banner-right-bg{
+        margin-bottom: 50px;
+        border-radius: 0;
+          border: 1px solid;
+          h3{
+            font-size: 22px;
+          }
+      }
+      .help{
+        margin-bottom: 50px;
+        border: 1px solid;
+        text-align: center;
+        padding: 30px;
+        h3{
+          position: relative;
+          padding-bottom: 15px;
+          margin-bottom: 15px;
+          &::after{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            content: '';
+            width: 30px;
+            height: 1px;
+            background-color: $fourth-color;
+          }
+        }
+      }
+      .letest_post{
+        margin-bottom: 50px;
+        padding: 20px ;
+        border: 1px solid;
+        h4{
+          padding-bottom: 10px;
+        }
+        .blog{
+          position: relative;
+          
+          img{
+            width: 100%;
+            
+          }
+          a{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: all linear .4s;
+            i{
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+}
+
+
+@include tablet{
+  .rooms-slider-area {
+    .sidebar{
+      .help {
+        padding: 5px;
+        font-size: 14px;
+    }
+    } 
+  }
+}
+
+
+  
+  
+  

@@ -1,0 +1,75 @@
+body{
+    overflow-x:hidden;
+    font-family: $primary-fonts;
+    font-size: 16px;
+    font-weight: 400;
+    color: $body-color;
+
+}
+
+.section-title{
+    color: $tertiary-color;
+    text-transform: uppercase;
+    h2{
+        font-size: 58px;
+        font-weight: 600;
+    }
+    p{
+        padding-bottom: 70px;
+        position: relative;
+        &::after{
+            position: absolute;
+            left: 0;
+            bottom: 40px;
+            width: 50px;
+            height: 2px;
+            background-color: $fourth-color;
+            content: "";
+        }
+    }
+}
+ h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: $white;
+    list-style: 70px;
+}
+h3{
+   
+        padding-top: 30px;
+        padding-bottom: 15px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+        color: $fourth-color;
+        text-transform: uppercase;
+    
+}
+h4{
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@include mobile{
+
+    p {
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    section{
+        overflow-x: hidden;
+    }
+    h1 {
+        font-size: 40px;
+        color: $primary-color;
+    }
+}
+
+@include tablet{
+    h3 {
+        font-size: 18px;
+    }
+}

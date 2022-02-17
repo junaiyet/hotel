@@ -1,0 +1,148 @@
+.rooms_area {
+    .room-list-item {
+        border-radius: 2px;
+        margin-bottom: 40px;
+        border: 1px solid $tertiary-color;
+        position: relative;
+        
+        .images-area {
+            position: relative;
+            overflow: hidden;
+
+            &:hover {
+                .overlay {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+
+            .img {
+                img {
+                    width: 100%;
+                }
+
+                .border-1 {
+                    position: absolute;
+                    left: 56%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    border: 1px solid #ffff;
+                    width: 100%;
+                    height: 80%;
+                }
+
+                .border-2 {
+                    left: 54%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    border: 1px solid #ffff;
+                    width: 100%;
+                    height: 85%;
+                }
+            }
+
+            .overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(45deg, rgba(240, 100, 149, 0.479), rgba(140, 200, 208, 0.418));
+                opacity: 0;
+                transition: all linear .3s;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+
+        .content {
+            padding: 20px;
+
+            h4 {
+                padding-bottom: 10px;
+            }
+
+            .reating {
+                padding-bottom: 10px;
+
+                li {
+                    display: inline-block;
+                    font-size: 13px;
+
+                    i {
+                        color: $dip-yellow;
+                    }
+                }
+            }
+
+            p {
+                padding-bottom: 10px;
+            }
+
+            .service {
+
+                li {
+                    display: inline-block;
+                    border: 1px solid;
+                    padding: 5px;
+                    font-size: 14px;
+
+                    i {
+                        width: 30px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .price {
+            border-left: 1px solid $tertiary-color;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .price_details {
+
+                span {
+                    display: block;
+                    color: $primary-color;
+                    padding-bottom: 15px;
+                }
+
+                .booking-btn {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+}
+
+@include mobile{
+    .rooms_area{
+        .room-list-item{
+            .price{
+                .price_details{
+                    .booking-btn {
+                        display: inline-block;
+                        margin-bottom: 20px;
+                    }
+                } 
+            } 
+        } 
+    } 
+}

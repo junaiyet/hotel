@@ -1,0 +1,131 @@
+
+
+.booking-banner{
+    background: url(../images/bokking-banner.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding: 100px 0;
+
+    .overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, rgba(240, 100, 149, 0.384), rgba(140, 200, 208, 0.432));
+        // padding: 100px 0;
+        padding-top: 80px;
+        color: $white;
+        h3{
+            text-align: left;
+            color: $white;
+            font-size: 24px;
+            padding-bottom: 10px;
+        }
+        ul{
+            li{
+                display: inline-block;
+                font-size: 12px;
+                margin-right: 15px;
+                position: relative;
+                &:not(:last-child):after{
+                    position: absolute;
+                    right: -10px;
+                    top: 3px;
+                    width: 1px;
+                    height: 70%;
+                    background-color: $white;
+                    content: "";
+                    transform: rotate(20deg);
+                }
+                &:last-child{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+
+.booking-form{
+    .booking-form-left{
+        .form-area{
+            margin-top: 60px;
+            .input-hedding{
+                padding: 10px 0;
+                text-transform: uppercase;
+                // font-size: 16px;
+                font-weight: 500;
+            }
+            .input-area{
+                    width: 100%;
+                    background: #f7f8f9;
+                    border: 1px solid #efefef;
+                    height: 45px;
+                    border-radius: 0;
+                    padding: 10px;
+                    color: #afafaf;
+                    outline: none;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    transition: .5s;
+                    font-size: 13px;
+                    line-height: 25px;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-transform: uppercase;
+                
+            }
+            .textarea{
+                height: 150px;
+            }
+
+        }
+        .form-btn{
+            padding-top: 50px;
+            text-align: right;
+        }
+    }
+   
+
+
+    .booking-form-right{
+        img{
+            width: 100%;
+        }
+        .item{
+            position: relative;
+            margin-bottom: 60px;
+            .overlay{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                .details{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    .bg-white{
+                        position: absolute;
+                        bottom: 0;
+                        left: -10px;
+                        padding:10px 5px;
+                        font-size: 12px;
+                    }
+                    .bg-gradient{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        background:linear-gradient(45deg, rgb(240, 100, 150), rgb(140, 200, 208)) !important;
+                        color: $white;
+                        padding: 0 10px;
+                        text-transform: capitalize;
+                    }
+                }
+
+            }
+        }
+    }
+}

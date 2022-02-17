@@ -1,0 +1,94 @@
+.services{
+    .service-item{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .caption{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: $white;
+            text-transform: capitalize;
+            font-weight: 700;
+
+        }
+    }
+
+
+    .counter-part{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .counter-item{
+            box-shadow: 0 15px 75px 0 rgba(0, 0, 0, .05);
+            width: 43%;
+            margin: 0 12px 24px 12px;
+            padding: 20px 5px;
+            text-align: center;
+            color: $white-drack;
+            position: relative;
+            text-transform: uppercase;
+            i{
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                font-size: 80px;
+                color: $white-drack-light ;
+                z-index: -1;
+            }
+            span{
+                font-size: 32px;
+                font-weight: 700;
+                display: block;
+                padding-bottom: 10px;
+
+            }
+        }
+    }
+
+}
+@include mobile {
+    .services{
+        .service-item{
+            margin-bottom: 50px;
+        }
+        .counter-part{
+            .counter-item{
+                width: 41%;
+                h5{
+                    font-size: 15px;
+                }
+                  span {
+                    font-size: 26px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+@include tablet{
+    .services{
+        .counter-part{
+            .counter-item {
+                width: 39%;
+                padding: 10px 5px;
+                i {
+                    font-size: 50px;
+               
+                }
+                 span {
+                    font-size: 26px;
+                    padding-bottom: 0;
+                }
+           h5{
+               font-size: 14px;
+           }
+            }
+        } 
+    }
+ 
+}

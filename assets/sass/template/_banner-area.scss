@@ -1,0 +1,162 @@
+.banner-area {
+    .banner-item {
+        background: url(../images/banner/banner-one.jpg) no-repeat center;
+        background-size: cover;
+        padding: 150px 0;
+
+        .banner-left-content {
+            ul {
+                li {
+                    padding-bottom: 20px;
+                    font-size: 18px;
+                    color: $white;
+
+                }
+            }
+
+            .btn-group {
+                .booking-btn {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+    
+    }
+
+    .banner-item-two{
+        background: url(../images/banner/banner-two.jpg) no-repeat center;
+
+    }
+    .banner-item-three{
+        background: url(../images/banner/banner-three.jpg) no-repeat center;
+
+    }
+    .prevarrow{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9;
+        text-align: center;
+        width: 30px;
+        height: 80px;
+        line-height: 80px;
+        background: $black;
+        color: $white;
+        transition: .4s;
+        opacity: 1;
+
+    }
+    .nextarrow{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        z-index: 9;
+        width: 30px;
+        height: 80px;
+        line-height: 80px;
+        background: $black;
+        color: $white;
+        transition: .4s;
+        opacity: 1;
+
+    }
+}
+.banner-right-bg {
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: $white;
+
+    form {
+        .foom-input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid $tertiary-color;
+            font-size: 14px;
+            padding: 8px 0;
+            margin: 8px 0;
+            color: $secondery-color;
+            text-transform: uppercase;
+
+            &:focus-visible {
+                border-bottom: 1px solid $tertiary-color;
+                outline: 0;
+            }
+
+            &:focus {
+                border-bottom: 1px solid $tertiary-color;
+                outline: 0;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: left;
+
+            }
+
+            .dropdown-menu {
+                width: 100%;
+            }
+        }
+
+        button {
+            margin-top: 30px;
+            width: 100%;
+            border: 0;
+        }
+    }
+
+    .advanced {
+        text-align: center;
+        color: $secondery-color;
+        display: block;
+        font-size: 13px;
+        padding-top: 15px;
+    }
+
+}
+@include mobile{
+
+    .banner-area{
+        .banner-item{
+            .banner-left-content{
+                ul{
+                    li {
+                        padding-bottom: 20px;
+                        font-size: 14px;
+                    }
+                } 
+            } 
+
+            .btn-group{
+                padding-bottom: 30px;
+                .booking-btn{
+                    font-size: 12px;
+                }
+            }
+        } 
+    }
+    }
+
+    @include tablet{
+        // .banner-area {
+
+        //     .banner-item {
+
+             
+        //     }
+        // }
+        .banner-right-bg{
+
+            form{
+
+                .foom-input {
+                  font-size: 12px;
+              
+              }
+            }
+        }
+    }
